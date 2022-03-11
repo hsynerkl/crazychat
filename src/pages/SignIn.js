@@ -1,4 +1,5 @@
 import { TextField, CssBaseline, Button, Box, Container, Link, Avatar, Typography } from '@mui/material'
+import { Link as Linkr } from 'react-router-dom'
 import LockOutLinedIcon from '@mui/icons-material/LockClockOutlined';
 
 export default function SignIn() {
@@ -16,7 +17,7 @@ export default function SignIn() {
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 4 }}>
                     <Link>Forgot Password?</Link>
-                    <Link>Dont Have Account? Sign Up</Link>
+                    <Linkr to="/Sign-up"><Link>Dont Have Account? Sign Up</Link></Linkr>
                 </Box>
             </Container>
         </>
