@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { signUp, SignIn, signIn } from './config/firebase';
-import './App.css';
+import { Provider } from 'react-redux';
+import { store } from './redux/index'
 import Router from './config/router'
 
 
@@ -13,7 +13,9 @@ function App() {
 
   return (
     <>
-      <Router />
+      <Provider store={store}>
+        <Router />
+      </Provider>
     </>
   );
 }
